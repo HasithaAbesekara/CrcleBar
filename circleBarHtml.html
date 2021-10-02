@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="circulBarHtml.css">
+    <title>circulBarHtml</title>
+</head>
+<body>
+    <div class="first">
+        <h1>HTML</h1>
+        <div class="skill">
+            <div class="outer">
+                <div class="inner" style="color:rgb(4, 0, 245);">
+                    <div id="num">
+                    
+                    </div>
+                </div>
+                
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="red" />
+                    
+                    <stop offset="100%" stop-color="blue" />
+                </linearGradient>
+                
+                </defs>
+                <circle  class="circle1" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+            
+        </div>
+    </div>
+    <div class="second">
+        <h1>CSS</h1>
+        <div class="skill">
+            <div class="outer">
+                <div class="inner" style="color:rgb(25, 0, 255);">
+                    <div id="num1">
+                    
+                    </div>
+                </div>
+                
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="red" />
+                    
+                    <stop offset="100%" stop-color="blue" />
+                </linearGradient>
+                
+                </defs>
+                <circle class="circle2" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+            
+        </div>
+    </div>
+    <div class="third">
+        <h1>JS</h1>
+        <div class="skill">
+            <div class="outer">
+                <div class="inner" style="color:rgb(24, 8, 253);">
+                    <div id="num3">
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="red" />
+                    
+                    <stop offset="100%" stop-color="blue" />
+                </linearGradient>
+                
+                </defs>
+                <circle class="circle3" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+            
+        </div>
+    </div>
+<script>
+    let num=document.getElementById("num");
+    let conter=0;
+    setInterval(() => {
+        if(conter == 65)
+        {
+            clearInterval();
+
+        }
+        else{
+            conter += 1;
+        num.innerHTML = conter +"%";
+        }
+        
+    },30)
+
+    let num1=document.getElementById("num1");
+    let conterr=0;
+    setInterval(() => {
+        if(conterr == 45)
+        {
+            clearInterval();
+
+        }
+        else{
+            conterr += 1;
+        num1.innerHTML = conterr +"%";
+        }
+        
+    },45)
+
+    let num3=document.getElementById("num3");
+    let conterr3=0;
+    setInterval(() => {
+        if(conterr3 == 25)
+        {
+            clearInterval();
+
+        }
+        else{
+            conterr3 += 1;
+        num3.innerHTML = conterr3 +"%";
+        }
+        
+    },70)
+
+    
+</script>
+
+</body>
+</html>
